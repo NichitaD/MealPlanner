@@ -1,0 +1,20 @@
+.search {
+  border-radius: 50px;
+  border: 2px solid grey;
+  margin-left: 48px;
+  background: var(--search-bar) url("../../../images/light.png") no-repeat 12px center;
+  color: var(--h5-color);
+  padding-left: 35px;
+  padding-right: 10px;
+  width: 120px;
+  height: 28px;
+  outline: none;
+  transition: background 0.7s, width 0.5s, padding 0.4s, color 0.7s;
+}
+
+::placeholder {
+  color: var(--h5-color);
+  font-family: "PT Sans", sans-serif;
+  letter-spacing: 0.5px;
+  transition: color 0.7s, opacity 0.7s;
+}

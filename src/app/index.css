@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|PT+Sans|Poppins&display=swap");
+
+:root {
+  --button-color: #37c1f2;
+  --background-color: white;
+  --title-color: black;
+  --h5-color: #4f4f4f;
+  --p-color: #545454;
+  --search-bar: white;
+  --shadow: rgba(0, 0, 0, 0.19);
+}
+

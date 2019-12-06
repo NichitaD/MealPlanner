@@ -1,0 +1,20 @@
+.title {
+  display: inline-block;
+
+  color: var(--title-color);
+  margin-top: 0px;
+  margin-bottom: 12px;
+  font-size: 48px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 550;
+  transition: color 0.7s;
+}
+
+.go_click {
+  color: var(--title-color);
+  margin-top: 0px;
+  margin-bottom: 25px;
+  font-size: 33px;
+  font-family: "PT Sans", sans-serif;
+  transition: color 0.7s;
+}
