@@ -3,10 +3,11 @@ import M from 'mustache'
 import template from './index.html'
 import './index.css'
 
-import Meal from '../index.js'
+import { Meal } from '../index.js'
 
 class Text {
   render () {
+    console.log(Meal)
     const text = Meal.getText()
     const html = M.render(template, {
       title: text.title,
