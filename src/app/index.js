@@ -15,6 +15,11 @@ class App {
       content: await new Content().render()
     })
     $container.innerHTML =  html
+    document.getElementById('button').addEventListener('click', this.changeContent)
+  }
+
+  async changeContent(){
+    document.getElementById('main').innerHTML = await new Content().render();
   }
 
   async run ($parent) {
