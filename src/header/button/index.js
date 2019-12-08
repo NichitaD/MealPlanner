@@ -8,6 +8,10 @@ class Button {
   render () {
     return template
   }
+
+   static async changeContent(content){
+    content.innerHTML = await new Content().render();
+  }
 }
 
 export default Button
