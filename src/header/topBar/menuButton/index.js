@@ -9,7 +9,6 @@ class MenuButton {
     const html = M.render(template, {
       source: photo
     })
-    console.log(html)
     return html
   }
 }

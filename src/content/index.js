@@ -6,13 +6,16 @@ import './index.css'
 import Image from './image'
 import Video from './video'
 import Text from './text'
+import API from '../api/index.js'
 
 class Content {
-  render () {
-    const html = M.render(template, {
-      image: new Image().render(),
-      text: new Text().render(),
-      video: new Video().render()
+   async render () {
+     console.log('called')
+    const meal = new Meal(await new API().getRandomMeal());
+    const html = M.render(template, {}, {
+      image: new Image().render(meal.getImage()),
+      text: new Text().render(meal.getText()),
+      video: new Video().render(meal.getVideo())
     })
     return html
   }
@@ -20,6 +23,7 @@ class Content {
 
 class Meal {
   constructor (meal) {
+    console.log(meal)
     let listString = ''
     for (let i = 1; i <= 20; ++i) {
       const name = `strIngredient${i}`
@@ -32,12 +36,15 @@ class Meal {
     }
     this.title = meal.strMeal
     this.image = meal.strMealThumb
-    this.video = meal.strYoutube
+    this.video =  meal.strYoutube.replace(
+      'watch?v=',
+      'embed/'
+    )
     this.category = meal.strCategory
     this.instructions = meal.strInstructions
     this.ingredients = listString
     if (meal.strTags != null) {
-      document.getElementById('tags').innerHTML = meal.strTags.replace(
+      this.tags = meal.strTags.replace(
         /,/g,
         ', '
       )
@@ -50,7 +57,8 @@ class Meal {
       category: this.category,
       tags: this.tags,
       instructions: this.instructions,
-      ingredient: this.ingredients
+      ingredients: this.ingredients,
+      image: this.image
     }
   }
 
@@ -63,4 +71,4 @@ class Meal {
   }
 }
 
-export { Meal, Content }
+export default  Content 
