@@ -9612,20 +9612,6 @@ exports.push([module.i, "header {\r\n  background: var(--background-color);\r\n 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/header/menu/index.css":
-/*!*************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/header/menu/index.css ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
-// Module
-exports.push([module.i, ".menu_content {\r\n  display: none;\r\n  opacity: 1;\r\n  position: absolute; top: 48px; left: 13px;\r\n  background-color: white;\r\n  min-width: 130px;\r\n  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\r\n  border-radius: 10px;\r\n  z-index: 1;\r\n  transition: opacity .3s ease;\r\n  cursor: auto;\r\n}\r\n\r\n.menu_list{\r\n  list-style: none;\r\n  padding: 0;\r\n  margin: 3px;\r\n  text-align: left;\r\n}\r\n\r\n.menu_list li{\r\n  font-family: \"PT Sans\", sans-serif;\r\n  font-weight: 600;\r\n  padding: 10px 5px 5px 5px;\r\n  border-bottom: 1px solid #ccc;\r\n  padding-bottom: 3px;\r\n  transition: background 0.2s;\r\n  border-radius: 2px;\r\n}\r\n\r\n.menu_list li:last-of-type{\r\n  border-bottom: none;\r\n}\r\n\r\n.menu_list li:hover{\r\n  cursor: pointer;\r\n  background:  rgb(204, 203, 203);\r\n}\r\n\r\n.menu_content:hover{\r\n  cursor: pointer;\r\n}\r\n\r\n.second_menu {\r\n  display: none;\r\n  opacity: 0;\r\n  position: absolute; top: 48px; left: 149px;\r\n  margin-right: 10px;\r\n  background-color: white;\r\n  min-width: 190px;\r\n  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\r\n  border-radius: 10px;\r\n  z-index: 1;\r\n  transition: opacity .3s ease;\r\n}\r\n\r\n.second_list{\r\n  list-style: none;\r\n  padding-left: 0;\r\n  margin: 3px;\r\n  text-align: left;\r\n}\r\n\r\n.second_list li{\r\n  font-family: \"PT Sans\", sans-serif;\r\n  font-weight: 600;\r\n  padding: 10px 5px 5px 5px;\r\n  border-bottom: 1px solid #ccc;\r\n  transition: background 0.2s;\r\n}\r\n\r\n.second_list li:last-of-type{\r\n  border-bottom: none;\r\n}\r\n\r\n.second_list li:hover{\r\n  cursor: pointer;\r\n  background:  rgb(204, 203, 203);\r\n}", ""]);
-
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/header/text/index.css":
 /*!*************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/header/text/index.css ***!
@@ -9664,6 +9650,20 @@ exports.push([module.i, ".top_bar {\r\n  width: 100%;\r\n  display: flex;\r\n  j
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
 exports.push([module.i, ".menu{\r\n  height: 44px;\r\n  position: absolute; \r\n  top: -0.5px;\r\n  left:2.5px;\r\n}\r\n\r\n.menu:hover{\r\n  cursor: pointer;\r\n  height: 47px;\r\n  top: -0.9px;\r\n  left:2px;\r\n}", ""]);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/header/topBar/menuButton/menu/index.css":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/header/topBar/menuButton/menu/index.css ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".menu_content {\r\n  display: none;\r\n  opacity: 1;\r\n  position: absolute; top: 48px; left: 13px;\r\n  background-color: white;\r\n  min-width: 130px;\r\n  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\r\n  border-radius: 10px;\r\n  z-index: 1;\r\n  transition: opacity .3s ease;\r\n  cursor: auto;\r\n}\r\n\r\n.menu_list{\r\n  list-style: none;\r\n  padding: 0;\r\n  margin: 3px;\r\n  text-align: left;\r\n}\r\n\r\n.menu_list li{\r\n  font-family: \"PT Sans\", sans-serif;\r\n  font-weight: 600;\r\n  padding: 10px 5px 5px 5px;\r\n  border-bottom: 1px solid #ccc;\r\n  padding-bottom: 3px;\r\n  transition: background 0.2s;\r\n  border-radius: 2px;\r\n}\r\n\r\n.menu_list li:last-of-type{\r\n  border-bottom: none;\r\n}\r\n\r\n.menu_list li:hover{\r\n  cursor: pointer;\r\n  background:  rgb(204, 203, 203);\r\n}\r\n\r\n.menu_content:hover{\r\n  cursor: pointer;\r\n}\r\n\r\n.second_menu {\r\n  display: none;\r\n  opacity: 0;\r\n  position: absolute; top: 48px; left: 149px;\r\n  margin-right: 10px;\r\n  background-color: white;\r\n  min-width: 190px;\r\n  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\r\n  border-radius: 10px;\r\n  z-index: 1;\r\n  transition: opacity .3s ease;\r\n}\r\n\r\n.second_list{\r\n  list-style: none;\r\n  padding-left: 0;\r\n  margin: 3px;\r\n  text-align: left;\r\n}\r\n\r\n.second_list li{\r\n  font-family: \"PT Sans\", sans-serif;\r\n  font-weight: 600;\r\n  padding: 10px 5px 5px 5px;\r\n  border-bottom: 1px solid #ccc;\r\n  transition: background 0.2s;\r\n}\r\n\r\n.second_list li:last-of-type{\r\n  border-bottom: none;\r\n}\r\n\r\n.second_list li:hover{\r\n  cursor: pointer;\r\n  background:  rgb(204, 203, 203);\r\n}", ""]);
 
 
 /***/ }),
@@ -11853,7 +11853,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _header_topBar_toggle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../header/topBar/toggle */ "./src/header/topBar/toggle/index.js");
 /* harmony import */ var _header_topBar_searchBar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../header/topBar/searchBar */ "./src/header/topBar/searchBar/index.js");
 /* harmony import */ var _header_topBar_menuButton__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../header/topBar/menuButton */ "./src/header/topBar/menuButton/index.js");
-/* harmony import */ var _header_menu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../header/menu */ "./src/header/menu/index.js");
+/* harmony import */ var _header_topBar_menuButton_menu__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../header/topBar/menuButton/menu */ "./src/header/topBar/menuButton/menu/index.js");
 /* harmony import */ var _content_video__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../content/video */ "./src/content/video/index.js");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./index.html */ "./src/app/index.html");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_9__);
@@ -11926,7 +11926,7 @@ function () {
               document.getElementById('play_button').addEventListener('click', _content_video__WEBPACK_IMPORTED_MODULE_8__["default"].playVideo);
               document.getElementById('play_button_mob').addEventListener('click', _content_video__WEBPACK_IMPORTED_MODULE_8__["default"].playVideo);
               document.getElementById('close').addEventListener('click', _content_video__WEBPACK_IMPORTED_MODULE_8__["default"].closeWindow);
-              _header_menu__WEBPACK_IMPORTED_MODULE_7__["default"].setEventListeners();
+              _header_topBar_menuButton_menu__WEBPACK_IMPORTED_MODULE_7__["default"].setEventListeners();
 
             case 20:
             case "end":
@@ -12666,7 +12666,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var mustache__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mustache */ "./node_modules/mustache/mustache.js");
 /* harmony import */ var mustache__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mustache__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./button */ "./src/header/button/index.js");
-/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ "./src/header/menu/index.js");
+/* harmony import */ var _topBar_menuButton_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./topBar/menuButton/menu */ "./src/header/topBar/menuButton/menu/index.js");
 /* harmony import */ var _topBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./topBar */ "./src/header/topBar/index.js");
 /* harmony import */ var _text__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./text */ "./src/header/text/index.js");
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./index.html */ "./src/header/index.html");
@@ -12709,7 +12709,7 @@ function () {
               _context.t2 = {};
               _context.t3 = new _topBar__WEBPACK_IMPORTED_MODULE_3__["default"]().render();
               _context.next = 6;
-              return regeneratorRuntime.awrap(new _menu__WEBPACK_IMPORTED_MODULE_2__["default"]().render());
+              return regeneratorRuntime.awrap(new _topBar_menuButton_menu__WEBPACK_IMPORTED_MODULE_2__["default"]().render());
 
             case 6:
               _context.t4 = _context.sent;
@@ -12737,292 +12737,6 @@ function () {
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
-
-/***/ }),
-
-/***/ "./src/header/menu/index.css":
-/*!***********************************!*\
-  !*** ./src/header/menu/index.css ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./index.css */ "./node_modules/css-loader/dist/cjs.js!./src/header/menu/index.css");
-
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
-
-var options = {}
-
-options.insert = "head";
-options.singleton = false;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
-
-if (content.locals) {
-  module.exports = content.locals;
-}
-
-
-/***/ }),
-
-/***/ "./src/header/menu/index.html":
-/*!************************************!*\
-  !*** ./src/header/menu/index.html ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"menu_content\" id=\"menu_content\"  style=\"opacity:0\">\r\n    <ul class=\"menu_list\" id=\"menu_list\">\r\n        {{ >firstList }}\r\n    </ul>\r\n</div>\r\n<div class=\"second_menu\" id=\"second_menu\">\r\n    <ul class=\"second_list\" id=\"second_list\">\r\n    </ul>\r\n</div>";
-
-/***/ }),
-
-/***/ "./src/header/menu/index.js":
-/*!**********************************!*\
-  !*** ./src/header/menu/index.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var mustache__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mustache */ "./node_modules/mustache/mustache.js");
-/* harmony import */ var mustache__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mustache__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.html */ "./src/header/menu/index.html");
-/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ "./src/header/menu/index.css");
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../api */ "./src/api/index.js");
-/* harmony import */ var _content__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../content */ "./src/content/index.js");
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-
-
-
-
-
-
-var Menu =
-/*#__PURE__*/
-function () {
-  function Menu() {
-    _classCallCheck(this, Menu);
-  }
-
-  _createClass(Menu, [{
-    key: "render",
-    value: function render() {
-      var html;
-      return regeneratorRuntime.async(function render$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              _context.t0 = mustache__WEBPACK_IMPORTED_MODULE_0___default.a;
-              _context.t1 = _index_html__WEBPACK_IMPORTED_MODULE_1___default.a;
-              _context.t2 = {};
-              _context.t3 = regeneratorRuntime;
-              _context.t4 = this;
-              _context.next = 7;
-              return regeneratorRuntime.awrap(new _api__WEBPACK_IMPORTED_MODULE_3__["default"]().getCategories());
-
-            case 7:
-              _context.t5 = _context.sent;
-              _context.t6 = _context.t4.renderList.call(_context.t4, _context.t5);
-              _context.next = 11;
-              return _context.t3.awrap.call(_context.t3, _context.t6);
-
-            case 11:
-              _context.t7 = _context.sent;
-              _context.t8 = {
-                firstList: _context.t7
-              };
-              html = _context.t0.render.call(_context.t0, _context.t1, _context.t2, _context.t8);
-              return _context.abrupt("return", html);
-
-            case 15:
-            case "end":
-              return _context.stop();
-          }
-        }
-      }, null, this);
-    }
-  }, {
-    key: "renderList",
-    value: function renderList(list) {
-      var menuItems = '';
-      var _iteratorNormalCompletion = true;
-      var _didIteratorError = false;
-      var _iteratorError = undefined;
-
-      try {
-        for (var _iterator = list[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-          var category = _step.value;
-          menuItems += "<li class=\"category\">".concat(category.strCategory, "</li>");
-        }
-      } catch (err) {
-        _didIteratorError = true;
-        _iteratorError = err;
-      } finally {
-        try {
-          if (!_iteratorNormalCompletion && _iterator["return"] != null) {
-            _iterator["return"]();
-          }
-        } finally {
-          if (_didIteratorError) {
-            throw _iteratorError;
-          }
-        }
-      }
-
-      return menuItems;
-    }
-  }], [{
-    key: "setEventListeners",
-    value: function setEventListeners() {
-      var list = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'first';
-
-      if (list == 'first') {
-        var listItems = document.getElementsByClassName('category');
-        var _iteratorNormalCompletion2 = true;
-        var _didIteratorError2 = false;
-        var _iteratorError2 = undefined;
-
-        try {
-          for (var _iterator2 = listItems[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-            var item = _step2.value;
-            item.addEventListener('click', this.displayMeals);
-          }
-        } catch (err) {
-          _didIteratorError2 = true;
-          _iteratorError2 = err;
-        } finally {
-          try {
-            if (!_iteratorNormalCompletion2 && _iterator2["return"] != null) {
-              _iterator2["return"]();
-            }
-          } finally {
-            if (_didIteratorError2) {
-              throw _iteratorError2;
-            }
-          }
-        }
-      } else {
-        var _listItems = document.getElementsByClassName('meal');
-
-        var _iteratorNormalCompletion3 = true;
-        var _didIteratorError3 = false;
-        var _iteratorError3 = undefined;
-
-        try {
-          for (var _iterator3 = _listItems[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-            var _item = _step3.value;
-
-            _item.addEventListener('click', function () {
-              _content__WEBPACK_IMPORTED_MODULE_4__["default"].updateContent('byName', event.target.innerHTML);
-            });
-          }
-        } catch (err) {
-          _didIteratorError3 = true;
-          _iteratorError3 = err;
-        } finally {
-          try {
-            if (!_iteratorNormalCompletion3 && _iterator3["return"] != null) {
-              _iterator3["return"]();
-            }
-          } finally {
-            if (_didIteratorError3) {
-              throw _iteratorError3;
-            }
-          }
-        }
-      }
-    }
-  }, {
-    key: "displayMeals",
-    value: function displayMeals() {
-      var meals, menuItems, _iteratorNormalCompletion4, _didIteratorError4, _iteratorError4, _iterator4, _step4, meal, menu;
-
-      return regeneratorRuntime.async(function displayMeals$(_context2) {
-        while (1) {
-          switch (_context2.prev = _context2.next) {
-            case 0:
-              console.log('called display');
-              _context2.next = 3;
-              return regeneratorRuntime.awrap(new _api__WEBPACK_IMPORTED_MODULE_3__["default"]().getMealsByCategory(event.target.innerHTML));
-
-            case 3:
-              meals = _context2.sent;
-              menuItems = '';
-              _iteratorNormalCompletion4 = true;
-              _didIteratorError4 = false;
-              _iteratorError4 = undefined;
-              _context2.prev = 8;
-
-              for (_iterator4 = meals[Symbol.iterator](); !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
-                meal = _step4.value;
-                menuItems += "<li class=\"meal\">".concat(meal.strMeal, "</li>");
-              }
-
-              _context2.next = 16;
-              break;
-
-            case 12:
-              _context2.prev = 12;
-              _context2.t0 = _context2["catch"](8);
-              _didIteratorError4 = true;
-              _iteratorError4 = _context2.t0;
-
-            case 16:
-              _context2.prev = 16;
-              _context2.prev = 17;
-
-              if (!_iteratorNormalCompletion4 && _iterator4["return"] != null) {
-                _iterator4["return"]();
-              }
-
-            case 19:
-              _context2.prev = 19;
-
-              if (!_didIteratorError4) {
-                _context2.next = 22;
-                break;
-              }
-
-              throw _iteratorError4;
-
-            case 22:
-              return _context2.finish(19);
-
-            case 23:
-              return _context2.finish(16);
-
-            case 24:
-              document.getElementById('second_list').innerHTML = menuItems;
-              menu = document.getElementById('second_menu');
-              menu.style.display = 'block';
-              setTimeout(function () {
-                menu.style.opacity = 1;
-              }, 100);
-              Menu.setEventListeners('second');
-
-            case 29:
-            case "end":
-              return _context2.stop();
-          }
-        }
-      }, null, null, [[8, 12, 16, 24], [17,, 19, 23]]);
-    }
-  }]);
-
-  return Menu;
-}();
-
-/* harmony default export */ __webpack_exports__["default"] = (Menu);
 
 /***/ }),
 
@@ -13324,6 +13038,292 @@ function () {
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (MenuButton);
+
+/***/ }),
+
+/***/ "./src/header/topBar/menuButton/menu/index.css":
+/*!*****************************************************!*\
+  !*** ./src/header/topBar/menuButton/menu/index.css ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader/dist/cjs.js!./index.css */ "./node_modules/css-loader/dist/cjs.js!./src/header/topBar/menuButton/menu/index.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = "head";
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+
+/***/ }),
+
+/***/ "./src/header/topBar/menuButton/menu/index.html":
+/*!******************************************************!*\
+  !*** ./src/header/topBar/menuButton/menu/index.html ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"menu_content\" id=\"menu_content\"  style=\"opacity:0\">\r\n    <ul class=\"menu_list\" id=\"menu_list\">\r\n        {{ >firstList }}\r\n    </ul>\r\n</div>\r\n<div class=\"second_menu\" id=\"second_menu\">\r\n    <ul class=\"second_list\" id=\"second_list\">\r\n    </ul>\r\n</div>";
+
+/***/ }),
+
+/***/ "./src/header/topBar/menuButton/menu/index.js":
+/*!****************************************************!*\
+  !*** ./src/header/topBar/menuButton/menu/index.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var mustache__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mustache */ "./node_modules/mustache/mustache.js");
+/* harmony import */ var mustache__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mustache__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.html */ "./src/header/topBar/menuButton/menu/index.html");
+/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.css */ "./src/header/topBar/menuButton/menu/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../api */ "./src/api/index.js");
+/* harmony import */ var _content__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../content */ "./src/content/index.js");
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+
+
+
+
+
+
+var Menu =
+/*#__PURE__*/
+function () {
+  function Menu() {
+    _classCallCheck(this, Menu);
+  }
+
+  _createClass(Menu, [{
+    key: "render",
+    value: function render() {
+      var html;
+      return regeneratorRuntime.async(function render$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.t0 = mustache__WEBPACK_IMPORTED_MODULE_0___default.a;
+              _context.t1 = _index_html__WEBPACK_IMPORTED_MODULE_1___default.a;
+              _context.t2 = {};
+              _context.t3 = regeneratorRuntime;
+              _context.t4 = this;
+              _context.next = 7;
+              return regeneratorRuntime.awrap(new _api__WEBPACK_IMPORTED_MODULE_3__["default"]().getCategories());
+
+            case 7:
+              _context.t5 = _context.sent;
+              _context.t6 = _context.t4.renderList.call(_context.t4, _context.t5);
+              _context.next = 11;
+              return _context.t3.awrap.call(_context.t3, _context.t6);
+
+            case 11:
+              _context.t7 = _context.sent;
+              _context.t8 = {
+                firstList: _context.t7
+              };
+              html = _context.t0.render.call(_context.t0, _context.t1, _context.t2, _context.t8);
+              return _context.abrupt("return", html);
+
+            case 15:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, null, this);
+    }
+  }, {
+    key: "renderList",
+    value: function renderList(list) {
+      var menuItems = '';
+      var _iteratorNormalCompletion = true;
+      var _didIteratorError = false;
+      var _iteratorError = undefined;
+
+      try {
+        for (var _iterator = list[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+          var category = _step.value;
+          menuItems += "<li class=\"category\">".concat(category.strCategory, "</li>");
+        }
+      } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion && _iterator["return"] != null) {
+            _iterator["return"]();
+          }
+        } finally {
+          if (_didIteratorError) {
+            throw _iteratorError;
+          }
+        }
+      }
+
+      return menuItems;
+    }
+  }], [{
+    key: "setEventListeners",
+    value: function setEventListeners() {
+      var list = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'first';
+
+      if (list == 'first') {
+        var listItems = document.getElementsByClassName('category');
+        var _iteratorNormalCompletion2 = true;
+        var _didIteratorError2 = false;
+        var _iteratorError2 = undefined;
+
+        try {
+          for (var _iterator2 = listItems[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+            var item = _step2.value;
+            item.addEventListener('click', this.displayMeals);
+          }
+        } catch (err) {
+          _didIteratorError2 = true;
+          _iteratorError2 = err;
+        } finally {
+          try {
+            if (!_iteratorNormalCompletion2 && _iterator2["return"] != null) {
+              _iterator2["return"]();
+            }
+          } finally {
+            if (_didIteratorError2) {
+              throw _iteratorError2;
+            }
+          }
+        }
+      } else {
+        var _listItems = document.getElementsByClassName('meal');
+
+        var _iteratorNormalCompletion3 = true;
+        var _didIteratorError3 = false;
+        var _iteratorError3 = undefined;
+
+        try {
+          for (var _iterator3 = _listItems[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+            var _item = _step3.value;
+
+            _item.addEventListener('click', function () {
+              _content__WEBPACK_IMPORTED_MODULE_4__["default"].updateContent('byName', event.target.innerHTML);
+            });
+          }
+        } catch (err) {
+          _didIteratorError3 = true;
+          _iteratorError3 = err;
+        } finally {
+          try {
+            if (!_iteratorNormalCompletion3 && _iterator3["return"] != null) {
+              _iterator3["return"]();
+            }
+          } finally {
+            if (_didIteratorError3) {
+              throw _iteratorError3;
+            }
+          }
+        }
+      }
+    }
+  }, {
+    key: "displayMeals",
+    value: function displayMeals() {
+      var meals, menuItems, _iteratorNormalCompletion4, _didIteratorError4, _iteratorError4, _iterator4, _step4, meal, menu;
+
+      return regeneratorRuntime.async(function displayMeals$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              console.log('called display');
+              _context2.next = 3;
+              return regeneratorRuntime.awrap(new _api__WEBPACK_IMPORTED_MODULE_3__["default"]().getMealsByCategory(event.target.innerHTML));
+
+            case 3:
+              meals = _context2.sent;
+              menuItems = '';
+              _iteratorNormalCompletion4 = true;
+              _didIteratorError4 = false;
+              _iteratorError4 = undefined;
+              _context2.prev = 8;
+
+              for (_iterator4 = meals[Symbol.iterator](); !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+                meal = _step4.value;
+                menuItems += "<li class=\"meal\">".concat(meal.strMeal, "</li>");
+              }
+
+              _context2.next = 16;
+              break;
+
+            case 12:
+              _context2.prev = 12;
+              _context2.t0 = _context2["catch"](8);
+              _didIteratorError4 = true;
+              _iteratorError4 = _context2.t0;
+
+            case 16:
+              _context2.prev = 16;
+              _context2.prev = 17;
+
+              if (!_iteratorNormalCompletion4 && _iterator4["return"] != null) {
+                _iterator4["return"]();
+              }
+
+            case 19:
+              _context2.prev = 19;
+
+              if (!_didIteratorError4) {
+                _context2.next = 22;
+                break;
+              }
+
+              throw _iteratorError4;
+
+            case 22:
+              return _context2.finish(19);
+
+            case 23:
+              return _context2.finish(16);
+
+            case 24:
+              document.getElementById('second_list').innerHTML = menuItems;
+              menu = document.getElementById('second_menu');
+              menu.style.display = 'block';
+              setTimeout(function () {
+                menu.style.opacity = 1;
+              }, 100);
+              Menu.setEventListeners('second');
+
+            case 29:
+            case "end":
+              return _context2.stop();
+          }
+        }
+      }, null, null, [[8, 12, 16, 24], [17,, 19, 23]]);
+    }
+  }]);
+
+  return Menu;
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (Menu);
 
 /***/ }),
 

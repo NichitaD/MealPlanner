@@ -7,7 +7,7 @@ import Button from '../header/button'
 import Toggle from '../header/topBar/toggle'
 import Search from '../header/topBar/searchBar'
 import MenuButton from '../header/topBar/menuButton'
-import Menu from '../header/menu'
+import Menu from '../header/topBar/menuButton/menu'
 import Video from '../content/video'
 
 // css & html

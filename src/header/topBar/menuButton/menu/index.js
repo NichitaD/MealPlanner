@@ -4,8 +4,8 @@ import M from 'mustache'
 import template from './index.html'
 import './index.css'
 
-import API from '../../api'
-import Content from '../../content'
+import API from '../../../../api'
+import Content from '../../../../content'
 
 class Menu {
   async render () {

@@ -2,7 +2,7 @@ import M from 'mustache'
 
 // Components
 import Button from './button'
-import Menu from './menu'
+import Menu from './topBar/menuButton/menu'
 import TopBar from './topBar'
 import Text from './text'
 
