@@ -45,6 +45,7 @@ class Content {
     document.getElementById('main').innerHTML = await Content.render(meal)
     document.getElementById('play_button').addEventListener('click', Video.playVideo)
     document.getElementById('close').addEventListener('click', Video.closeWindow)
+    document.getElementById('play_button_mob').addEventListener('click', Video.playVideo)
   }
 }
 

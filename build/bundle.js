@@ -9520,8 +9520,10 @@ module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/cor
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Oswald|PT+Sans|Poppins&display=swap);", ""]);
+var getUrl = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+var ___CSS_LOADER_URL___0___ = getUrl(__webpack_require__(/*! ../images/light.png */ "./src/images/light.png"));
 // Module
-exports.push([module.i, ":root {\r\n  --button-color: #37c1f2;\r\n  --background-color: white;\r\n  --title-color: black;\r\n  --h5-color: #4f4f4f;\r\n  --p-color: #545454;\r\n  --search-bar: white;\r\n  --shadow: rgba(0, 0, 0, 0.19);\r\n}\r\n\r\nbody{\r\n  margin: 0;\r\n  padding-top: 5px;\r\n  background: var(--background-color);\r\n  transition: background 0.7s;\r\n}\r\n", ""]);
+exports.push([module.i, ":root {\r\n  --button-color: #37c1f2;\r\n  --background-color: white;\r\n  --title-color: black;\r\n  --h5-color: #4f4f4f;\r\n  --p-color: #545454;\r\n  --search-bar: white;\r\n  --shadow: rgba(0, 0, 0, 0.19);\r\n}\r\n\r\nbody{\r\n  margin: 0;\r\n  padding-top: 5px;\r\n  background: var(--background-color);\r\n  transition: background 0.7s;\r\n}\r\n\r\n@media only screen and (max-width: 800px) {\r\n  .container1 {\r\n      display: flex;\r\n      flex-direction: column;\r\n  }\r\n\r\n  .rcp_title {\r\n      font-size: 40px;\r\n      margin-bottom: 20px;\r\n  }\r\n\r\n  .rcp_text {\r\n      font-size: 24px;\r\n  }\r\n\r\n  .recepy {\r\n      margin-left: 10px;\r\n      margin-right: 10px;\r\n  }\r\n\r\n  .img {\r\n      display: none;\r\n  }\r\n\r\n  .img_mob {\r\n      display: block;\r\n      margin-top: 20px;\r\n  }\r\n\r\n  .play_button_mob {\r\n      display: block;\r\n  }\r\n\r\n  .search {\r\n      width: 80px;\r\n  }\r\n\r\n  .img_wrapper_mob:hover .img_mob {\r\n      opacity: 0.5;\r\n  }\r\n\r\n  .img_wrapper_mob:hover .overlay_mob {\r\n      opacity: 1;\r\n  }\r\n\r\n  .play_button_mob:hover {\r\n      cursor: pointer;\r\n  }\r\n\r\n  .img_wrapper:hover .img {\r\n      opacity: 0;\r\n  }\r\n\r\n  .img_wrapper:hover .overlay {\r\n      opacity: 0;\r\n  }\r\n\r\n  .play_button{\r\n     display: none;\r\n  }\r\n\r\n  .img_wrapper_mob .overlay_mob{\r\n      opacity: 1;\r\n  }\r\n\r\n  .img_wrapper_mob .play_button_mob{\r\n      width: 150px;\r\n  }\r\n}\r\n\r\n@media only screen and (max-width: 650px) {\r\n  .go_click {\r\n      font-size: 28px;\r\n  }\r\n\r\n  .search {\r\n      width: 0px;\r\n      padding-left: 20px;\r\n      background: var(--search-bar) url(" + ___CSS_LOADER_URL___0___ + ") no-repeat 7px center;\r\n  }\r\n  \r\n  .search:hover{\r\n      cursor: pointer;\r\n  }\r\n\r\n  .search::placeholder{\r\n      opacity: 0;\r\n  }\r\n\r\n  .search:focus{\r\n      width: 100px;\r\n      background: var(--search-bar) url(" + ___CSS_LOADER_URL___0___ + ") no-repeat 7px center;\r\n      padding-left: 35px;\r\n      padding-right: 10px;\r\n      cursor: auto;\r\n  }\r\n\r\n  .search:focus::placeholder{\r\n      opacity: 1;\r\n  }\r\n\r\n  .title {\r\n      font-size: 45px;\r\n  }\r\n\r\n  .rcp_text {\r\n      font-size: 20px;\r\n  }\r\n\r\n  .img_wrapper_mob .play_button_mob{\r\n      width: 120px;\r\n  }\r\n  \r\n}\r\n\r\n@media only screen and (max-width: 550px) {\r\n  .go_click {\r\n      font-size: 24px;\r\n  }\r\n\r\n  .title {\r\n      font-size: 43px;\r\n  }\r\n\r\n  .rcp_title {\r\n      font-size: 37px;\r\n  }\r\n\r\n  .img_wrapper_mob .play_button_mob{\r\n      width: 100px;\r\n  }\r\n  \r\n}\r\n\r\n@media only screen and (max-width: 450px) {\r\n  .go_click {\r\n      font-size: 21px;\r\n  }\r\n\r\n  .title {\r\n      font-size: 40px;\r\n  }\r\n\r\n  .img_wrapper_mob .play_button_mob{\r\n      width: 80px;\r\n  }\r\n}\r\n\r\n@media only screen and (max-width: 375px) {\r\n  .go_click {\r\n      font-size: 21px;\r\n      text-align: center;\r\n  }\r\n\r\n  .title {\r\n      font-size: 38px;\r\n  }\r\n\r\n  .img_wrapper_mob .play_button_mob{\r\n      width: 80px;\r\n  }\r\n}", ""]);
 
 
 /***/ }),
@@ -9619,7 +9621,7 @@ exports.push([module.i, "header {\r\n  background: var(--background-color);\r\n 
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".menu_content {\r\n  display: none;\r\n  opacity: 1;\r\n  position: absolute; top: 48px; left: 13px;\r\n  background-color: white;\r\n  min-width: 130px;\r\n  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\r\n  border-radius: 10px;\r\n  z-index: 1;\r\n  transition: opacity .3s ease;\r\n  cursor: auto;\r\n}\r\n\r\n.menu_list{\r\n  list-style: none;\r\n  padding-left: 0;\r\n  margin: 3px;\r\n  text-align: left;\r\n}\r\n\r\n.menu_list li{\r\n  font-family: \"PT Sans\", sans-serif;\r\n  font-weight: 600;\r\n  margin: 7px;\r\n  margin-top: 10px;\r\n  border-bottom: 1px solid #ccc;\r\n  padding-bottom: 3px;\r\n}\r\n\r\n.menu_list li:last-of-type{\r\n  border-bottom: none;\r\n}\r\n\r\n.menu_list li:hover{\r\n  cursor: pointer;\r\n}\r\n\r\n.menu_content:hover{\r\n  cursor: pointer;\r\n}\r\n\r\n.second_menu {\r\n  display: none;\r\n  opacity: 0;\r\n  position: absolute; top: 48px; left: 149px;\r\n  margin-right: 10px;\r\n  background-color: white;\r\n  min-width: 130px;\r\n  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\r\n  border-radius: 10px;\r\n  z-index: 1;\r\n  transition: opacity .3s ease;\r\n}\r\n\r\n.second_list{\r\n  list-style: none;\r\n  padding-left: 0;\r\n  margin: 3px;\r\n  text-align: left;\r\n}\r\n\r\n.second_list li{\r\n  font-family: \"PT Sans\", sans-serif;\r\n  font-weight: 600;\r\n  margin: 7px;\r\n  margin-top: 10px;\r\n  border-bottom: 1px solid #ccc;\r\n  padding-bottom: 2px;\r\n}\r\n\r\n.second_list li:last-of-type{\r\n  border-bottom: none;\r\n}\r\n\r\n.second_list li:hover{\r\n  cursor: pointer;\r\n}", ""]);
+exports.push([module.i, ".menu_content {\r\n  display: none;\r\n  opacity: 1;\r\n  position: absolute; top: 48px; left: 13px;\r\n  background-color: white;\r\n  min-width: 130px;\r\n  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\r\n  border-radius: 10px;\r\n  z-index: 1;\r\n  transition: opacity .3s ease;\r\n  cursor: auto;\r\n}\r\n\r\n.menu_list{\r\n  list-style: none;\r\n  padding: 0;\r\n  margin: 3px;\r\n  text-align: left;\r\n}\r\n\r\n.menu_list li{\r\n  font-family: \"PT Sans\", sans-serif;\r\n  font-weight: 600;\r\n  padding: 10px 5px 5px 5px;\r\n  border-bottom: 1px solid #ccc;\r\n  padding-bottom: 3px;\r\n  transition: background 0.2s;\r\n  border-radius: 2px;\r\n}\r\n\r\n.menu_list li:last-of-type{\r\n  border-bottom: none;\r\n}\r\n\r\n.menu_list li:hover{\r\n  cursor: pointer;\r\n  background:  rgb(204, 203, 203);\r\n}\r\n\r\n.menu_content:hover{\r\n  cursor: pointer;\r\n}\r\n\r\n.second_menu {\r\n  display: none;\r\n  opacity: 0;\r\n  position: absolute; top: 48px; left: 149px;\r\n  margin-right: 10px;\r\n  background-color: white;\r\n  min-width: 190px;\r\n  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\r\n  border-radius: 10px;\r\n  z-index: 1;\r\n  transition: opacity .3s ease;\r\n}\r\n\r\n.second_list{\r\n  list-style: none;\r\n  padding-left: 0;\r\n  margin: 3px;\r\n  text-align: left;\r\n}\r\n\r\n.second_list li{\r\n  font-family: \"PT Sans\", sans-serif;\r\n  font-weight: 600;\r\n  padding: 10px 5px 5px 5px;\r\n  border-bottom: 1px solid #ccc;\r\n  transition: background 0.2s;\r\n}\r\n\r\n.second_list li:last-of-type{\r\n  border-bottom: none;\r\n}\r\n\r\n.second_list li:hover{\r\n  cursor: pointer;\r\n  background:  rgb(204, 203, 203);\r\n}", ""]);
 
 
 /***/ }),
@@ -9661,7 +9663,7 @@ exports.push([module.i, ".top_bar {\r\n  width: 100%;\r\n  display: flex;\r\n  j
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".menu{\r\n  height: 44px;\r\n  position: absolute; \r\n  top: -0.5px;\r\n  left:2.5px;\r\n}\r\n\r\n.menu:hover{\r\n  cursor: pointer;\r\n}", ""]);
+exports.push([module.i, ".menu{\r\n  height: 44px;\r\n  position: absolute; \r\n  top: -0.5px;\r\n  left:2.5px;\r\n}\r\n\r\n.menu:hover{\r\n  cursor: pointer;\r\n  height: 47px;\r\n  top: -0.9px;\r\n  left:2px;\r\n}", ""]);
 
 
 /***/ }),
@@ -9678,7 +9680,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 var getUrl = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
 var ___CSS_LOADER_URL___0___ = getUrl(__webpack_require__(/*! ../../../images/light.png */ "./src/images/light.png"));
 // Module
-exports.push([module.i, ".search {\r\n  border-radius: 50px;\r\n  border: 2px solid grey;\r\n  margin-left: 48px;\r\n  background: var(--search-bar) url(" + ___CSS_LOADER_URL___0___ + ") no-repeat 12px center;\r\n  color: var(--h5-color);\r\n  padding-left: 35px;\r\n  padding-right: 10px;\r\n  width: 120px;\r\n  height: 28px;\r\n  outline: none;\r\n  transition: background 0.7s, width 0.5s, padding 0.4s, color 0.7s;\r\n}\r\n\r\n::placeholder {\r\n  color: var(--h5-color);\r\n  font-family: \"PT Sans\", sans-serif;\r\n  letter-spacing: 0.5px;\r\n  transition: color 0.7s, opacity 0.7s;\r\n}\r\n", ""]);
+exports.push([module.i, ".search {\r\n  border-radius: 50px;\r\n  border: 2px solid grey;\r\n  margin-left: 50px;\r\n  background: var(--search-bar) url(" + ___CSS_LOADER_URL___0___ + ") no-repeat 12px center;\r\n  color: var(--h5-color);\r\n  padding-left: 35px;\r\n  padding-right: 10px;\r\n  width: 120px;\r\n  height: 28px;\r\n  outline: none;\r\n  transition: background 0.7s, width 0.5s, padding 0.4s, color 0.7s;\r\n}\r\n\r\n::placeholder {\r\n  color: var(--h5-color);\r\n  font-family: \"PT Sans\", sans-serif;\r\n  letter-spacing: 0.5px;\r\n  transition: color 0.7s, opacity 0.7s;\r\n}\r\n\r\n", ""]);
 
 
 /***/ }),
@@ -9692,7 +9694,7 @@ exports.push([module.i, ".search {\r\n  border-radius: 50px;\r\n  border: 2px so
 
 exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".switch {\r\n  position: relative;\r\n  grid-column: 2/3;\r\n  display: inline-block;\r\n  width: 60px;\r\n  height: 34px;\r\n}\r\n\r\n.switch input {\r\n  opacity: 0;\r\n  width: 0;\r\n  height: 0;\r\n}\r\n\r\n.slider {\r\n  position: absolute;\r\n  cursor: pointer;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  background-color: #ccc;\r\n  -webkit-transition: 0.4s;\r\n  transition: 0.4s;\r\n}\r\n\r\n.slider:before {\r\n  position: absolute;\r\n  content: \"\";\r\n  height: 26px;\r\n  width: 26px;\r\n  left: 4px;\r\n  bottom: 4px;\r\n  background-color: white;\r\n  -webkit-transition: 0.4s;\r\n  transition: 0.4s;\r\n}\r\n\r\n.slider.round {\r\n  border-radius: 34px;\r\n}\r\n\r\n.slider.round:before {\r\n  border-radius: 50%;\r\n}\r\n\r\ninput:checked + .slider {\r\n  background-color: var(--button-color);\r\n}\r\n\r\ninput:focus + .slider {\r\n  box-shadow: 0 0 1px var(--button-color);\r\n}\r\n\r\ninput:checked + .slider:before {\r\n  -webkit-transform: translateX(26px);\r\n  -ms-transform: translateX(26px);\r\n  transform: translateX(26px);\r\n}\r\n", ""]);
+exports.push([module.i, ".switch {\r\n  position: relative;\r\n  grid-column: 2/3;\r\n  display: inline-block;\r\n  width: 60px;\r\n  height: 34px;\r\n  margin-right: 5px;\r\n}\r\n\r\n.switch input {\r\n  opacity: 0;\r\n  width: 0;\r\n  height: 0;\r\n}\r\n\r\n.slider {\r\n  position: absolute;\r\n  cursor: pointer;\r\n  top: 0;\r\n  left: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  background-color: #ccc;\r\n  -webkit-transition: 0.4s;\r\n  transition: 0.4s;\r\n}\r\n\r\n.slider:before {\r\n  position: absolute;\r\n  content: \"\";\r\n  height: 26px;\r\n  width: 26px;\r\n  left: 4px;\r\n  bottom: 4px;\r\n  background-color: white;\r\n  -webkit-transition: 0.4s;\r\n  transition: 0.4s;\r\n}\r\n\r\n.slider.round {\r\n  border-radius: 34px;\r\n}\r\n\r\n.slider.round:before {\r\n  border-radius: 50%;\r\n}\r\n\r\ninput:checked + .slider {\r\n  background-color: var(--button-color);\r\n}\r\n\r\ninput:focus + .slider {\r\n  box-shadow: 0 0 1px var(--button-color);\r\n}\r\n\r\ninput:checked + .slider:before {\r\n  -webkit-transform: translateX(26px);\r\n  -ms-transform: translateX(26px);\r\n  transform: translateX(26px);\r\n}\r\n", ""]);
 
 
 /***/ }),
@@ -11922,10 +11924,11 @@ function () {
               });
               document.getElementById('menu').addEventListener('click', _header_topBar_menuButton__WEBPACK_IMPORTED_MODULE_6__["default"].toggleMenu);
               document.getElementById('play_button').addEventListener('click', _content_video__WEBPACK_IMPORTED_MODULE_8__["default"].playVideo);
+              document.getElementById('play_button_mob').addEventListener('click', _content_video__WEBPACK_IMPORTED_MODULE_8__["default"].playVideo);
               document.getElementById('close').addEventListener('click', _content_video__WEBPACK_IMPORTED_MODULE_8__["default"].closeWindow);
               _header_menu__WEBPACK_IMPORTED_MODULE_7__["default"].setEventListeners();
 
-            case 19:
+            case 20:
             case "end":
               return _context.stop();
           }
@@ -12232,8 +12235,9 @@ function () {
               document.getElementById('main').innerHTML = _context2.sent;
               document.getElementById('play_button').addEventListener('click', _video__WEBPACK_IMPORTED_MODULE_4__["default"].playVideo);
               document.getElementById('close').addEventListener('click', _video__WEBPACK_IMPORTED_MODULE_4__["default"].closeWindow);
+              document.getElementById('play_button_mob').addEventListener('click', _video__WEBPACK_IMPORTED_MODULE_4__["default"].playVideo);
 
-            case 37:
+            case 38:
             case "end":
               return _context2.stop();
           }

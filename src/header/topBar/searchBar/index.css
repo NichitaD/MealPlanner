@@ -1,7 +1,7 @@
 .search {
   border-radius: 50px;
   border: 2px solid grey;
-  margin-left: 48px;
+  margin-left: 50px;
   background: var(--search-bar) url("../../../images/light.png") no-repeat 12px center;
   color: var(--h5-color);
   padding-left: 35px;
@@ -18,3 +18,4 @@
   letter-spacing: 0.5px;
   transition: color 0.7s, opacity 0.7s;
 }
+

@@ -28,6 +28,7 @@ class App {
       .addEventListener('keypress', key => Search.search(key, document.getElementById('main')))
     document.getElementById('menu').addEventListener('click', MenuButton.toggleMenu)
     document.getElementById('play_button').addEventListener('click', Video.playVideo)
+    document.getElementById('play_button_mob').addEventListener('click', Video.playVideo)
     document.getElementById('close').addEventListener('click', Video.closeWindow)
     Menu.setEventListeners()
   }
