@@ -1,6 +1,6 @@
 .menu_content {
   display: none;
-  opacity: 0;
+  opacity: 1;
   position: absolute; top: 48px; left: 13px;
   background-color: white;
   min-width: 130px;
@@ -32,6 +32,10 @@
 }
 
 .menu_list li:hover{
+  cursor: pointer;
+}
+
+.menu_content:hover{
   cursor: pointer;
 }
 

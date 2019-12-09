@@ -4,17 +4,18 @@ import template from './index.html'
 import './index.css'
 
 class Toggle {
-  constructor(){
-    this.color="light"
+  constructor () {
+    this.color = 'light'
   }
+
   render () {
     const html = template
     return html
   }
 
-  static changeTheme(style) {
-    const element = style;
-    if (this.color == 'light' || this.color == undefined ) {
+  static changeTheme (style) {
+    const element = style
+    if (this.color == 'light' || this.color == undefined) {
       setTimeout(function () {
         document.getElementById('button').innerHTML = 'GET MEAL 🌮'
       }, 250)
@@ -42,7 +43,6 @@ class Toggle {
       this.color = 'light'
     }
   }
-
 }
 
 export default Toggle

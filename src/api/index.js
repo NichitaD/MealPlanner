@@ -1,7 +1,7 @@
 const API_URL = 'https://www.themealdb.com/api/json/v1/1'
 
 class API {
-  async getRandomMeal() {
+  async getRandomMeal () {
     // document.getElementById('search').value = ''
     try {
       const response = await fetch(
@@ -15,8 +15,25 @@ class API {
       return null
     }
   }
-  
-  async getCategories() {
+
+  async getMealsBySearch (search) {
+    const response = await fetch(
+      `https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`
+    )
+    const data = await response.json()
+    const random = Math.floor(Math.random() * data.meals.length)
+    return data.meals[random]
+  }
+
+  async getMealsByName (name) {
+    const response = await fetch(
+      `https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`
+    )
+    const data = await response.json()
+    return data.meals[0]
+  }
+
+  async getCategories () {
     try {
       const response = await fetch(
         'https://www.themealdb.com/api/json/v1/1/categories.php'
@@ -28,8 +45,8 @@ class API {
       return null
     }
   }
-  
-  async getMealsByCategory(category) {
+
+  async getMealsByCategory (category) {
     try {
       const response = await fetch(
         `https://www.themealdb.com/api/json/v1/1/filter.php?c=${event.target.innerHTML}`
@@ -44,5 +61,3 @@ class API {
 }
 
 export default API
-
-

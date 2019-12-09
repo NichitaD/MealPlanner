@@ -19,23 +19,18 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        use: ['html-loader']
+        exclude: /node_modules/,
+        loader: 'html-loader'
       },
       {
-        test: /\.(jpg|png)$/,
-        use: {
-          loader: 'url-loader', 
-        }
-      },
-      {
-        test: /\.png$/, 
+        test: /\.png$/,
         exclude: /node_modules/,
         loader: 'file-loader?name=images/[name].[ext]'
       }
     ]
   },
   resolve: {
-    extensions: ['.js', '.ts', '.png']
+    extensions: ['.js', '.ts']
   },
   stats: {
     colors: true,

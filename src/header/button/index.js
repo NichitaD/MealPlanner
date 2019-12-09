@@ -9,8 +9,8 @@ class Button {
     return template
   }
 
-   static async changeContent(content){
-    content.innerHTML = await new Content().render();
+  static async changeContent (content) {
+    content.innerHTML = await new Content().render()
   }
 }
 

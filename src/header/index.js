@@ -11,10 +11,10 @@ import template from './index.html'
 import './index.css'
 
 class Header {
-  render () {
+  async render () {
     const html = M.render(template, {}, {
       topBar: new TopBar().render(),
-      menu: new Menu().render(),
+      menu: await new Menu().render(),
       text: new Text().render(),
       button: new Button().render()
     })

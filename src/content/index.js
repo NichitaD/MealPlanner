@@ -9,9 +9,23 @@ import Text from './text'
 import API from '../api/index.js'
 
 class Content {
-   async render () {
-     console.log('called')
-    const meal = new Meal(await new API().getRandomMeal());
+  async render (mealType = 'random', search) {
+    let meal = ''
+    switch (mealType) {
+      case 'random': {
+        meal = new Meal(await new API().getRandomMeal())
+        break
+      }
+      case 'search': {
+        meal = new Meal(await new API().getMealsBySearch(search))
+        break
+      }
+
+      case 'byName': {
+        console.log(search)
+        meal = new Meal(await new API().getMealsByName(search))
+      }
+    }
     const html = M.render(template, {}, {
       image: new Image().render(meal.getImage()),
       text: new Text().render(meal.getText()),
@@ -36,7 +50,7 @@ class Meal {
     }
     this.title = meal.strMeal
     this.image = meal.strMealThumb
-    this.video =  meal.strYoutube.replace(
+    this.video = meal.strYoutube.replace(
       'watch?v=',
       'embed/'
     )
@@ -71,4 +85,4 @@ class Meal {
   }
 }
 
-export default  Content 
+export default Content
