@@ -14,7 +14,7 @@ class SearchBar {
   static async search (key, content) {
     if (key.key === 'Enter') {
       const search = document.getElementById('search').value
-      content.innerHTML = await new Content().render('search', search)
+      Content.updateContent('search', search)
     }
   }
 }

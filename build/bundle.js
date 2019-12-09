@@ -11901,7 +11901,7 @@ function () {
             case 5:
               _context.t3 = _context.sent;
               _context.next = 8;
-              return regeneratorRuntime.awrap(new _content__WEBPACK_IMPORTED_MODULE_2__["default"]().render());
+              return regeneratorRuntime.awrap(_content__WEBPACK_IMPORTED_MODULE_2__["default"].updateContent('init'));
 
             case 8:
               _context.t4 = _context.sent;
@@ -11912,7 +11912,7 @@ function () {
               html = _context.t0.render.call(_context.t0, _context.t1, _context.t2, _context.t5);
               $container.innerHTML = html;
               document.getElementById('button').addEventListener('click', function () {
-                _header_button__WEBPACK_IMPORTED_MODULE_3__["default"].changeContent(document.getElementById('main'));
+                _content__WEBPACK_IMPORTED_MODULE_2__["default"].updateContent('random');
               });
               document.getElementById('switch').addEventListener('change', function () {
                 _header_topBar_toggle__WEBPACK_IMPORTED_MODULE_4__["default"].changeTheme(document.documentElement.style);
@@ -12142,56 +12142,14 @@ function () {
     _classCallCheck(this, Content);
   }
 
-  _createClass(Content, [{
+  _createClass(Content, null, [{
     key: "render",
-    value: function render() {
-      var mealType,
-          search,
-          meal,
-          html,
-          _args = arguments;
+    value: function render(meal) {
+      var html;
       return regeneratorRuntime.async(function render$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
-              mealType = _args.length > 0 && _args[0] !== undefined ? _args[0] : 'random';
-              search = _args.length > 1 ? _args[1] : undefined;
-              meal = '';
-              _context.t0 = mealType;
-              _context.next = _context.t0 === 'random' ? 6 : _context.t0 === 'search' ? 12 : _context.t0 === 'byName' ? 18 : 24;
-              break;
-
-            case 6:
-              _context.t1 = Meal;
-              _context.next = 9;
-              return regeneratorRuntime.awrap(new _api_index_js__WEBPACK_IMPORTED_MODULE_6__["default"]().getRandomMeal());
-
-            case 9:
-              _context.t2 = _context.sent;
-              meal = new _context.t1(_context.t2);
-              return _context.abrupt("break", 24);
-
-            case 12:
-              _context.t3 = Meal;
-              _context.next = 15;
-              return regeneratorRuntime.awrap(new _api_index_js__WEBPACK_IMPORTED_MODULE_6__["default"]().getMealsBySearch(search));
-
-            case 15:
-              _context.t4 = _context.sent;
-              meal = new _context.t3(_context.t4);
-              return _context.abrupt("break", 24);
-
-            case 18:
-              console.log(search);
-              _context.t5 = Meal;
-              _context.next = 22;
-              return regeneratorRuntime.awrap(new _api_index_js__WEBPACK_IMPORTED_MODULE_6__["default"]().getMealsByName(search));
-
-            case 22:
-              _context.t6 = _context.sent;
-              meal = new _context.t5(_context.t6);
-
-            case 24:
               html = mustache__WEBPACK_IMPORTED_MODULE_0___default.a.render(_index_html__WEBPACK_IMPORTED_MODULE_1___default.a, {}, {
                 image: new _image__WEBPACK_IMPORTED_MODULE_3__["default"]().render(meal.getImage()),
                 text: new _text__WEBPACK_IMPORTED_MODULE_5__["default"]().render(meal.getText()),
@@ -12199,9 +12157,85 @@ function () {
               });
               return _context.abrupt("return", html);
 
-            case 26:
+            case 2:
             case "end":
               return _context.stop();
+          }
+        }
+      });
+    }
+  }, {
+    key: "updateContent",
+    value: function updateContent() {
+      var mealType,
+          search,
+          meal,
+          _args2 = arguments;
+      return regeneratorRuntime.async(function updateContent$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              mealType = _args2.length > 0 && _args2[0] !== undefined ? _args2[0] : 'random';
+              search = _args2.length > 1 ? _args2[1] : undefined;
+              meal = '';
+              _context2.t0 = mealType;
+              _context2.next = _context2.t0 === 'random' ? 6 : _context2.t0 === 'search' ? 12 : _context2.t0 === 'byName' ? 19 : _context2.t0 === 'init' ? 26 : 32;
+              break;
+
+            case 6:
+              _context2.t1 = Meal;
+              _context2.next = 9;
+              return regeneratorRuntime.awrap(new _api_index_js__WEBPACK_IMPORTED_MODULE_6__["default"]().getRandomMeal());
+
+            case 9:
+              _context2.t2 = _context2.sent;
+              meal = new _context2.t1(_context2.t2);
+              return _context2.abrupt("break", 32);
+
+            case 12:
+              console.log('called');
+              _context2.t3 = Meal;
+              _context2.next = 16;
+              return regeneratorRuntime.awrap(new _api_index_js__WEBPACK_IMPORTED_MODULE_6__["default"]().getMealsBySearch(search));
+
+            case 16:
+              _context2.t4 = _context2.sent;
+              meal = new _context2.t3(_context2.t4);
+              return _context2.abrupt("break", 32);
+
+            case 19:
+              console.log(search);
+              _context2.t5 = Meal;
+              _context2.next = 23;
+              return regeneratorRuntime.awrap(new _api_index_js__WEBPACK_IMPORTED_MODULE_6__["default"]().getMealsByName(search));
+
+            case 23:
+              _context2.t6 = _context2.sent;
+              meal = new _context2.t5(_context2.t6);
+              return _context2.abrupt("break", 32);
+
+            case 26:
+              _context2.t7 = Meal;
+              _context2.next = 29;
+              return regeneratorRuntime.awrap(new _api_index_js__WEBPACK_IMPORTED_MODULE_6__["default"]().getRandomMeal());
+
+            case 29:
+              _context2.t8 = _context2.sent;
+              meal = new _context2.t7(_context2.t8);
+              return _context2.abrupt("return", Content.render(meal));
+
+            case 32:
+              _context2.next = 34;
+              return regeneratorRuntime.awrap(Content.render(meal));
+
+            case 34:
+              document.getElementById('main').innerHTML = _context2.sent;
+              document.getElementById('play_button').addEventListener('click', _video__WEBPACK_IMPORTED_MODULE_4__["default"].playVideo);
+              document.getElementById('close').addEventListener('click', _video__WEBPACK_IMPORTED_MODULE_4__["default"].closeWindow);
+
+            case 37:
+            case "end":
+              return _context2.stop();
           }
         }
       });
@@ -12885,7 +12919,7 @@ function () {
             var _item = _step3.value;
 
             _item.addEventListener('click', function () {
-              Menu.setMeal(event.target.innerHTML);
+              _content__WEBPACK_IMPORTED_MODULE_4__["default"].updateContent('byName', event.target.innerHTML);
             });
           }
         } catch (err) {
@@ -12905,86 +12939,63 @@ function () {
       }
     }
   }, {
-    key: "setMeal",
-    value: function setMeal(name) {
-      var meal, content;
-      return regeneratorRuntime.async(function setMeal$(_context2) {
-        while (1) {
-          switch (_context2.prev = _context2.next) {
-            case 0:
-              _context2.next = 2;
-              return regeneratorRuntime.awrap(new _content__WEBPACK_IMPORTED_MODULE_4__["default"]().render('byName', name));
-
-            case 2:
-              meal = _context2.sent;
-              content = document.getElementById('main');
-              content.innerHTML = meal;
-
-            case 5:
-            case "end":
-              return _context2.stop();
-          }
-        }
-      });
-    }
-  }, {
     key: "displayMeals",
     value: function displayMeals() {
       var meals, menuItems, _iteratorNormalCompletion4, _didIteratorError4, _iteratorError4, _iterator4, _step4, meal, menu;
 
-      return regeneratorRuntime.async(function displayMeals$(_context3) {
+      return regeneratorRuntime.async(function displayMeals$(_context2) {
         while (1) {
-          switch (_context3.prev = _context3.next) {
+          switch (_context2.prev = _context2.next) {
             case 0:
               console.log('called display');
-              _context3.next = 3;
+              _context2.next = 3;
               return regeneratorRuntime.awrap(new _api__WEBPACK_IMPORTED_MODULE_3__["default"]().getMealsByCategory(event.target.innerHTML));
 
             case 3:
-              meals = _context3.sent;
+              meals = _context2.sent;
               menuItems = '';
               _iteratorNormalCompletion4 = true;
               _didIteratorError4 = false;
               _iteratorError4 = undefined;
-              _context3.prev = 8;
+              _context2.prev = 8;
 
               for (_iterator4 = meals[Symbol.iterator](); !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
                 meal = _step4.value;
                 menuItems += "<li class=\"meal\">".concat(meal.strMeal, "</li>");
               }
 
-              _context3.next = 16;
+              _context2.next = 16;
               break;
 
             case 12:
-              _context3.prev = 12;
-              _context3.t0 = _context3["catch"](8);
+              _context2.prev = 12;
+              _context2.t0 = _context2["catch"](8);
               _didIteratorError4 = true;
-              _iteratorError4 = _context3.t0;
+              _iteratorError4 = _context2.t0;
 
             case 16:
-              _context3.prev = 16;
-              _context3.prev = 17;
+              _context2.prev = 16;
+              _context2.prev = 17;
 
               if (!_iteratorNormalCompletion4 && _iterator4["return"] != null) {
                 _iterator4["return"]();
               }
 
             case 19:
-              _context3.prev = 19;
+              _context2.prev = 19;
 
               if (!_didIteratorError4) {
-                _context3.next = 22;
+                _context2.next = 22;
                 break;
               }
 
               throw _iteratorError4;
 
             case 22:
-              return _context3.finish(19);
+              return _context2.finish(19);
 
             case 23:
-              return _context3.finish(16);
+              return _context2.finish(16);
 
             case 24:
               document.getElementById('second_list').innerHTML = menuItems;
@@ -12997,7 +13008,7 @@ function () {
 
             case 29:
             case "end":
-              return _context3.stop();
+              return _context2.stop();
           }
         }
       }, null, null, [[8, 12, 16, 24], [17,, 19, 23]]);
@@ -13396,19 +13407,12 @@ function () {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
-              if (!(key.key === 'Enter')) {
-                _context.next = 5;
-                break;
+              if (key.key === 'Enter') {
+                search = document.getElementById('search').value;
+                _content__WEBPACK_IMPORTED_MODULE_2__["default"].updateContent('search', search);
               }
 
-              search = document.getElementById('search').value;
-              _context.next = 4;
-              return regeneratorRuntime.awrap(new _content__WEBPACK_IMPORTED_MODULE_2__["default"]().render('search', search));
-
-            case 4:
-              content.innerHTML = _context.sent;
-
-            case 5:
+            case 1:
             case "end":
               return _context.stop();
           }
@@ -13475,6 +13479,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_html__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ "./src/header/topBar/toggle/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _images_close_dark_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../images/close_dark.png */ "./src/images/close_dark.png");
+/* harmony import */ var _images_close_light_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../images/close_light.png */ "./src/images/close_light.png");
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -13482,6 +13488,8 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 // CSS & HTML
+
+
 
 
 
@@ -13516,7 +13524,7 @@ function () {
         element.setProperty('--list-color', 'white');
         element.setProperty('--search-bar', '#5e5e5e');
         element.setProperty('--shadow', '#5e5e5e');
-        document.getElementById('close_button').src = '../image/close_dark.png';
+        document.getElementById('close_button').src = _images_close_dark_png__WEBPACK_IMPORTED_MODULE_2__["default"];
         this.color = 'dark';
       } else {
         setTimeout(function () {
@@ -13529,7 +13537,7 @@ function () {
         element.setProperty('--list-color', '#6b6b6b');
         element.setProperty('--search-bar', 'white');
         element.setProperty('--shadow', 'rgba(0, 0, 0, 0.19)');
-        document.getElementById('close_button').src = '../image/close_light.png';
+        document.getElementById('close_button').src = _images_close_light_png__WEBPACK_IMPORTED_MODULE_3__["default"];
         this.color = 'light';
       }
     }
@@ -13539,6 +13547,19 @@ function () {
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (Toggle);
+
+/***/ }),
+
+/***/ "./src/images/close_dark.png":
+/*!***********************************!*\
+  !*** ./src/images/close_dark.png ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "images/close_dark.png");
 
 /***/ }),
 

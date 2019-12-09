@@ -32,15 +32,9 @@ class Menu {
     } else {
       const listItems = document.getElementsByClassName('meal')
       for (const item of listItems) {
-        item.addEventListener('click', function () { Menu.setMeal(event.target.innerHTML) })
+        item.addEventListener('click', function () { Content.updateContent('byName', event.target.innerHTML) })
       }
     }
-  }
-
-  static async setMeal (name) {
-    const meal = await new Content().render('byName', name)
-    const content = document.getElementById('main')
-    content.innerHTML = meal
   }
 
   static async displayMeals () {

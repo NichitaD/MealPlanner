@@ -3,6 +3,9 @@
 import template from './index.html'
 import './index.css'
 
+import darkButton from '../../../images/close_dark.png'
+import lightButton from '../../../images/close_light.png'
+
 class Toggle {
   constructor () {
     this.color = 'light'
@@ -26,7 +29,7 @@ class Toggle {
       element.setProperty('--list-color', 'white')
       element.setProperty('--search-bar', '#5e5e5e')
       element.setProperty('--shadow', '#5e5e5e')
-      document.getElementById('close_button').src = '../image/close_dark.png'
+      document.getElementById('close_button').src = darkButton
       this.color = 'dark'
     } else {
       setTimeout(function () {
@@ -39,7 +42,7 @@ class Toggle {
       element.setProperty('--list-color', '#6b6b6b')
       element.setProperty('--search-bar', 'white')
       element.setProperty('--shadow', 'rgba(0, 0, 0, 0.19)')
-      document.getElementById('close_button').src = '../image/close_light.png'
+      document.getElementById('close_button').src = lightButton
       this.color = 'light'
     }
   }

@@ -18,10 +18,10 @@ class App {
   async render ($container) {
     const html = M.render(template, {}, {
       header: await new Header().render(),
-      content: await new Content().render()
+      content: await Content.updateContent('init')
     })
     $container.innerHTML = html
-    document.getElementById('button').addEventListener('click', function () { Button.changeContent(document.getElementById('main')) })
+    document.getElementById('button').addEventListener('click', function () { Content.updateContent('random') })
     document.getElementById('switch').addEventListener('change', function () { Toggle.changeTheme(document.documentElement.style) })
     document
       .querySelector('#search')

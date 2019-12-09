@@ -9,7 +9,16 @@ import Text from './text'
 import API from '../api/index.js'
 
 class Content {
-  async render (mealType = 'random', search) {
+  static async render (meal) {
+    const html = M.render(template, {}, {
+      image: new Image().render(meal.getImage()),
+      text: new Text().render(meal.getText()),
+      video: new Video().render(meal.getVideo())
+    })
+    return html
+  }
+
+  static async updateContent (mealType = 'random', search) {
     let meal = ''
     switch (mealType) {
       case 'random': {
@@ -17,6 +26,7 @@ class Content {
         break
       }
       case 'search': {
+        console.log('called')
         meal = new Meal(await new API().getMealsBySearch(search))
         break
       }
@@ -24,14 +34,17 @@ class Content {
       case 'byName': {
         console.log(search)
         meal = new Meal(await new API().getMealsByName(search))
+        break
+      }
+
+      case 'init': {
+        meal = new Meal(await new API().getRandomMeal())
+        return Content.render(meal)
       }
     }
-    const html = M.render(template, {}, {
-      image: new Image().render(meal.getImage()),
-      text: new Text().render(meal.getText()),
-      video: new Video().render(meal.getVideo())
-    })
-    return html
+    document.getElementById('main').innerHTML = await Content.render(meal)
+    document.getElementById('play_button').addEventListener('click', Video.playVideo)
+    document.getElementById('close').addEventListener('click', Video.closeWindow)
   }
 }
 
