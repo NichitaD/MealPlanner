@@ -4,7 +4,6 @@ import template from './index.html'
 import './index.css'
 import play from '../../images/play.png'
 
-
 class Text {
   render (text) {
     const html = M.render(template, {
@@ -17,9 +16,8 @@ class Text {
     }, {
       ingredients: text.ingredients
     })
-    console.log(text.ingredients)
     return html
   }
 }
 
-export default Text 
+export default Text

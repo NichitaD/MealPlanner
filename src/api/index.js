@@ -5,10 +5,9 @@ class API {
     // document.getElementById('search').value = ''
     try {
       const response = await fetch(
-        'https://www.themealdb.com/api/json/v1/1/random.php'
+        `${API_URL}/random.php`
       )
       const data = await response.json()
-      console.log(data.meals[0])
       return (data.meals[0])
     } catch (e) {
       console.log('Error is: ' + e)
@@ -18,7 +17,7 @@ class API {
 
   async getMealsBySearch (search) {
     const response = await fetch(
-      `https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`
+      `${API_URL}/search.php?s=${search}`
     )
     const data = await response.json()
     const random = Math.floor(Math.random() * data.meals.length)
@@ -27,7 +26,7 @@ class API {
 
   async getMealsByName (name) {
     const response = await fetch(
-      `https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`
+      `${API_URL}/search.php?s=${name}`
     )
     const data = await response.json()
     return data.meals[0]
@@ -36,7 +35,7 @@ class API {
   async getCategories () {
     try {
       const response = await fetch(
-        'https://www.themealdb.com/api/json/v1/1/categories.php'
+        `${API_URL}/categories.php`
       )
       const data = await response.json()
       return data.categories
@@ -49,7 +48,7 @@ class API {
   async getMealsByCategory (category) {
     try {
       const response = await fetch(
-        `https://www.themealdb.com/api/json/v1/1/filter.php?c=${event.target.innerHTML}`
+        `${API_URL}/filter.php?c=${event.target.innerHTML}`
       )
       const data = await response.json()
       return data.meals

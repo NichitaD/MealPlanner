@@ -15,7 +15,6 @@ class MenuButton {
   static async toggleMenu () {
     const menu = document.getElementById('menu_content')
     if (menu.style.opacity === '0') {
-      console.log('called')
       menu.style.display = 'block'
       setTimeout(function () {
         menu.style.opacity = 1

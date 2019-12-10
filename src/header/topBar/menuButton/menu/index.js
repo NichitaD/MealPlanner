@@ -24,7 +24,7 @@ class Menu {
   }
 
   static setEventListeners (list = 'first') {
-    if (list == 'first') {
+    if (list === 'first') {
       const listItems = document.getElementsByClassName('category')
       for (const item of listItems) {
         item.addEventListener('click', this.displayMeals)
@@ -38,7 +38,6 @@ class Menu {
   }
 
   static async displayMeals () {
-    console.log('called display')
     const meals = await new API().getMealsByCategory(event.target.innerHTML)
     let menuItems = ''
     for (const meal of meals) {

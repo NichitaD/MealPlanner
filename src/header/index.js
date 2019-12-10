@@ -1,10 +1,10 @@
 import M from 'mustache'
 
 // Components
-import Button from './button'
+import Button from './getMealButton'
 import Menu from './topBar/menuButton/menu'
 import TopBar from './topBar'
-import Text from './text'
+import Text from './title'
 
 // CSS & HTML
 import template from './index.html'

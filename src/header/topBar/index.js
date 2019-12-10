@@ -2,8 +2,8 @@ import M from 'mustache'
 
 // components
 import MenuButton from './menuButton'
-import SearchBar from './searchBar'
-import Toggle from './toggle'
+import SearchBar from './search'
+import Toggle from './themeToggle'
 
 // css & html
 import template from './index.html'

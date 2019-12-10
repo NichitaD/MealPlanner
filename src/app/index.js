@@ -3,12 +3,11 @@ import M from 'mustache'
 // components
 import Header from '../header'
 import Content from '../content'
-import Button from '../header/button'
-import Toggle from '../header/topBar/toggle'
-import Search from '../header/topBar/searchBar'
+import Toggle from '../header/topBar/themeToggle'
+import Search from '../header/topBar/search'
 import MenuButton from '../header/topBar/menuButton'
 import Menu from '../header/topBar/menuButton/menu'
-import Video from '../content/video'
+import Video from '../content/recepyVideo'
 
 // css & html
 import template from './index.html'
@@ -44,7 +43,10 @@ window.onclick = function (event) {
     document.getElementById('video_window').classList.add('hideWindow')
     video.classList.remove('showWindow')
     var iframes = document.getElementsByTagName('iframe')
-    if (iframes != null) iframes[0].src = iframes[0].src
+    if (iframes != null) { // Reseting video by reasigning the source
+      const videoSource = iframes[0].src
+      iframes[0].src = videoSource
+    }
   } else if (document.getElementById('menu_content').style.opacity === '1') {
     if (event.target.classList[0] !== 'category') {
       MenuButton.toggleMenu()

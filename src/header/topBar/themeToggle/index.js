@@ -18,7 +18,7 @@ class Toggle {
 
   static changeTheme (style) {
     const element = style
-    if (this.color == 'light' || this.color == undefined) {
+    if (this.color === 'light' || this.color === undefined) {
       setTimeout(function () {
         document.getElementById('button').innerHTML = 'GET MEAL 🌮'
       }, 250)
