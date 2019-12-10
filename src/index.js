@@ -1,6 +1,5 @@
 import App from './app'
 import '@babel/polyfill'
-import menu_button from './images/menu.png'
 
 const $body = document.getElementsByTagName('body')[0]
 
