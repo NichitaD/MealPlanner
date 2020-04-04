@@ -12651,7 +12651,7 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<header>\r\n    <div class=\"top_bar\">\r\n        {{> topBar}}\r\n    </div>\r\n    <div class =\"menu\">\r\n        {{> menu }}\r\n    </div>\r\n    <div class=\"text\">\r\n        {{> text }}\r\n    </div>\r\n    <div >\r\n        {{> button }}\r\n     </div>\r\n</header>";
+module.exports = "<header>\r\n    <div class=\"top_bar\">\r\n        {{> topBar}}\r\n    </div>\r\n    <div>\r\n        {{> menu }}\r\n    </div>\r\n    <div class=\"text\">\r\n        {{> text }}\r\n    </div>\r\n    <div >\r\n        {{> button }}\r\n     </div>\r\n</header>";
 
 /***/ }),
 
